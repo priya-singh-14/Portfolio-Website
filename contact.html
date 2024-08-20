@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Priya Singh</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            font-family: DM Sans;
+            font-weight: 500;
+            gap: 0px;
+        }
+
+        body p {
+            font-family: Helvetica, sans-serif;
+            font-weight: 300;
+            margin-top: 10px;
+        }
+
+        body ul li a {
+            font-family: Helvetica, sans-serif;
+            font-weight: 300;
+            margin-top: 10px;
+        }
+
+        .content-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            font-size: 130%;
+            margin-top: 26px;
+            background-image: url("assets/Byphone.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 400px;
+        }
+        form label,
+        form input,
+        form textarea,
+        form button {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        form button {
+            width: 100%;
+            padding: 13px 20px;
+            color:rgb(235, 235, 223);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="transparent-nav">
+                <div class="nav-left">
+                    <a href="index.html"><img src="assets/logo.png" alt="Logo" style="height: 24px;"></a>
+                </div>
+                <div class="nav-right">
+                    <ul>
+                        <li><a href="about.html">ABOUT ME</a></li>
+                        <li><a href="projects.html">PROJECTS</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="content-section">
+            <h1>Contact</h1>
+            <p>Please reach out to me through the following methods:</p>
+            <ul>
+                <li>Email: <a href="mailto:singh.priya3@northeastern.edu">singh.priya3@northeastern.edu</a></li>
+                <li>Phone: <a href="tel:+9732246966">+9732246966</a></li>
+            </ul>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
